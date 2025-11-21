@@ -1,3 +1,4 @@
+local layout = require("snacks.layout")
 local M = {}
 
 M.setup = function()
@@ -137,4 +138,12 @@ M.open_new_task_form = function()
   vim.keymap.set("n", "q", close_form, { buffer = form_buf, nowait = true })
 end
 
+--Define cutom command :TaskNew)
+Snacks.layout.new({
+	layout = {
+		width = 0.6,
+		height = 0.6,
+		zindex = 50,
+	},
+})
 return M
