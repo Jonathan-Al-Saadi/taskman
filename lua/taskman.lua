@@ -7,7 +7,7 @@ local config = {
 
 -- ripgrep patterns
 local PATTERNS = {
-	due = "^- \\[ \\]",
+	todo = "^- \\[ \\]",
 	done = "^- \\[[xX]\\]",
 }
 
@@ -72,12 +72,12 @@ M.setup = function(opts)
 	vim.api.nvim_create_user_command("TaskList", function(cmd_opts)
 		local arg = cmd_opts.args
 		if arg == "" then
-			arg = "due"
+			arg = "todo"
 		end
 
 		local pattern = PATTERNS[arg]
 		if not pattern then
-			vim.notify("TaskList: use :TaskList due or :TaskList done", vim.log.levels.ERROR)
+			vim.notify("TaskList: use :TaskList todo or :TaskList done", vim.log.levels.ERROR)
 			return
 		end
 
