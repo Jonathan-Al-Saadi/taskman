@@ -1,7 +1,7 @@
 # taskman.nvim
 A tiny Neovim plugin for extracting Markdown task lists (- [ ] and - [x]) from a directory and displaying them in vims native selection tool (vim.ui.select) with jump navigation and fuzzy finding.
 
-![Example](img/example.gif) 
+![Example](https://private-user-images.githubusercontent.com/69520285/517763952-dcee1817-0245-4525-a1c0-f96c40699d73.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM4NDU1NjksIm5iZiI6MTc2Mzg0NTI2OSwicGF0aCI6Ii82OTUyMDI4NS81MTc3NjM5NTItZGNlZTE4MTctMDI0NS00NTI1LWExYzAtZjk2YzQwNjk5ZDczLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTExMjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMTIyVDIxMDEwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgzOTMwOGYzZTY4MTM1NGIzMTMzZTFlMGM5MjQ0NTQ0Nzc0ZTRmYTUxN2MzODk3YmI1Yzc5ZDcwODNiMWQ2ZjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.qYXqw0RhYzWnVc2W5yC39ZNkOp10a0gvVFTP9eE0MRc) 
 
 Uses fast ripgrep (rg --vimgrep) and Neovim’s built-in quickfix parser.
 
