@@ -55,6 +55,7 @@ local show_tasks_popup = function(pattern, dir)
 
 	for _, item in ipairs(tasks) do
 		local file = vim.fn.bufname(item.bufnr)
+		file = vim.fn.pathshorten(file)
 		table.insert(entries, string.format("%-" .. max_len .. "s    %s", item.text, file))
 	end
 
